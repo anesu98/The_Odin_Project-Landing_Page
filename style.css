@@ -33,3 +33,32 @@ body {
     margin: 0 auto;
 }
 /* Navigation Bar*/
+
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar {
+    background: var(--PrimaryColor1);
+    height: 70px;
+}
+
+.navbar .container a {
+    text-decoration: none;
+    color: var(--PrimaryColor2);
+ 
+}
+
+.navbar .container ul a:hover {
+    color: var(--PrimaryColor3);
+}
+
+.navbar .container ul {
+    list-style: none;
+    display: flex;
+}
+
