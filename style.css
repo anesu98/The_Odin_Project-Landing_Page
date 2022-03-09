@@ -18,8 +18,8 @@
 /* General CSS */
 
 * {
-    margin: 0 0px;
-    padding: 0 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -31,7 +31,14 @@ body {
 
 .container {
     margin: 0 auto;
+    max-width: 900px;
 }
+
+
+
+
+
+
 /* Navigation Bar*/
 
 
@@ -62,3 +69,21 @@ body {
     display: flex;
 }
 
+.navbar .container ul li {
+    font-size: medium;
+    margin-left: 20px;
+}
+
+.navbar .container .logo {
+    font-weight: 700;
+    font-size: x-large;
+}
+
+@media (max-width: 900px) {
+    .navbar .container {
+        max-width: 80vw;
+    }
+    .navbar .container ul li {
+        font-size: 2.5vmin;
+    }
+}
