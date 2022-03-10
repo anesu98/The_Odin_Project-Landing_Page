@@ -58,7 +58,7 @@ img {
 }
 
 .navbar .container {
-    max-width: 1000px;
+    max-width: 70vmax;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -73,8 +73,8 @@ img {
 .navbar .container ul {
     display: flex;
     list-style-type: none;
-    width: 600px;
-    font-size: x-large;
+    width: 450px;
+    font-size: large;
     justify-content: space-between;
     /*
     border-style: solid;
@@ -93,12 +93,15 @@ img {
 .navbar .container ul li:hover {
     color: var(--PrimaryColor3);
     border-style: solid;
+    border: 0px 0px 0px 0px;
+    border-width: 0px 0px 3px 0px;
+    border-radius: 5px;
     border-color: var(--PrimaryColor2);
     background-color: var(--PrimaryColor3);
 }
 
 .navbar .container .logo {
-    font-size: xx-large;
+    font-size: x-large;
     font-weight: 900;
     width: 200px;
     /*
