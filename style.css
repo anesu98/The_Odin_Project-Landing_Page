@@ -363,3 +363,53 @@ img {
 
 }
 
+
+
+
+
+
+
+/*    Article Section    */
+
+
+.article {
+    height: 60vmin;
+}
+
+.article .container {
+    border-style: solid;
+    border-color: #000;
+
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 80vmax;
+}
+
+.article .container .title {
+    border-style: solid;
+    border-color: #000;
+    height: 15%;
+}
+
+.article .container .cont {
+    border-style: solid;
+    border-color: #000;
+    height: 85%;
+}
+
+.cont {
+    display: flex;
+}
+
+.cont .boxes {
+    border-style: solid;
+    border-color: #000;
+}
+
+.boxes,
+.box {
+    border-style: solid;
+    border-color: #000;
+}
