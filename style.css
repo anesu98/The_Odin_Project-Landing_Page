@@ -31,81 +31,81 @@ body {
 
 .container {
     margin: 0 auto;
-    max-width: 900px;
+}
+
+
+img {
+    max-height: 100%;
+    width: auto;
 }
 
 
 
+/* Group Selectors*/
+
+.navbar,
+.header {
+    background-color: var(--PrimaryColor1);
+    color: var(--PrimaryColor2);
+}
 
 
 
 /* Navigation Bar*/
 
+.navbar {
+    height: 90px;
+}
 
 .navbar .container {
+    max-width: 1000px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
 }
 
-.navbar {
-    background: var(--PrimaryColor1);
-    height: 70px;
-}
-
-.navbar .container a {
-    text-decoration: none;
+.navbar a {
+    text-decoration: none;  
     color: var(--PrimaryColor2);
- 
-}
-
-.navbar .container ul a:hover {
-    color: var(--PrimaryColor3);
 }
 
 .navbar .container ul {
-    list-style: none;
     display: flex;
+    list-style-type: none;
+    width: 600px;
+    font-size: x-large;
+    justify-content: space-between;
+    /*
+    border-style: solid;
+    border-color: #fff;
+    */
 }
 
 .navbar .container ul li {
-    font-size: medium;
-    margin-left: 20px;
+    padding: 10px 10px 10px 10px;
+    /*
+    border-style: solid;
+    border-color: #fff;
+    */
+}
+
+.navbar .container ul li:hover {
+    color: var(--PrimaryColor3);
+    border-style: solid;
+    border-color: var(--PrimaryColor2);
+    background-color: var(--PrimaryColor3);
 }
 
 .navbar .container .logo {
-    font-weight: 700;
-    font-size: x-large;
+    font-size: xx-large;
+    font-weight: 900;
+    width: 200px;
+    /*
+    border-style: solid;
+    border-color: #fff;
+    */
 }
-
-@media (max-width: 900px) {
-    .navbar .container {
-        max-width: 80vw;
-    }
-    .navbar .container ul li {
-        font-size: 2.5vmin;
-    }
-}
-
-
-
 
 /* Header CSS*/
 
-.header {
-    background: var(--PrimaryColor1);
-    color: var(--PrimaryColor2);
-    height: 600px;
-
-}
-
-.header .container {
-    display: flex;
-}
-
-.header img {
-    max-width: 100%;
-    height: auto;
-
-}
