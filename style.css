@@ -170,16 +170,42 @@ img {
     border-color: #fff;
 }
 
-.hero div {    
+.hero a {
+    text-decoration: none;  
+    color: var(--PrimaryColor2);
+    background: var(--PrimaryColor3);
+}
+
+.hero a:hover {
+    color: var(--PrimaryColor3);
+    background-color: var(--PrimaryColor2);
+}
+
+
+.hero .button {
+    /*
     border-style: solid;
     border-color: #fff;
+    */
+
+    font-size: small;
+    font-weight: 600;
+
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
 
 
-@media(max-width: 700) {
+@media(max-width: 1000px) {
     .header .container {
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
 }
