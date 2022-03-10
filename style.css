@@ -5,6 +5,8 @@
 
 
 
+
+
 /* Root */
 
 
@@ -13,6 +15,9 @@
     --PrimaryColor2: #e5e7eb;
     --PrimaryColor3: #3882f6;
 }
+
+
+
 
 
 /* General CSS */
@@ -41,6 +46,8 @@ img {
 
 
 
+
+
 /* Group Selectors*/
 
 .navbar,
@@ -48,6 +55,10 @@ img {
     background-color: var(--PrimaryColor1);
     color: var(--PrimaryColor2);
 }
+
+
+
+
 
 
 
@@ -110,5 +121,65 @@ img {
     */
 }
 
+
+
+
 /* Header CSS*/
 
+.header .container {
+    border-style: solid;
+    border-color: #fff;
+
+    display: flex;
+    max-width: 70vmax;
+    height: 70vmin;
+    align-items: center;
+}
+
+
+.header .container img {
+    width: auto;
+    height: 300px;
+
+    border-style: solid;
+    border-color: #fff;
+}
+
+
+/* Hero */
+
+
+.hero {
+    border-style: solid;
+    border-color: #fff;
+
+    padding: 30px 30px 30px 30px;
+    display: flex;
+    height: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero h1 {
+    border-style: solid;
+    border-color: #fff; 
+}
+
+.hero p {
+    border-style: solid;
+    border-color: #fff;
+}
+
+.hero div {    
+    border-style: solid;
+    border-color: #fff;
+}
+
+
+
+
+@media(max-width: 700) {
+    .header .container {
+        display: block;
+    }
+}
