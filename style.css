@@ -127,70 +127,16 @@ img {
 
 
 
-/* Header CSS 1350px + (full screen) */
-
-
-
-@media(min-width: 1125px) {
-
-
-.header .container {
-    /*
-    border-style: solid;
-    border-color: #fff;
-    */
-    display: flex;
-    max-width: 70vmax;
-    height: 65vmin;
-    align-items: center;
-    justify-content: space-between;
+@media(max-width: 0px) {
+    .navbar .container {
+         max-width: 80vmax;
+    }
 }
 
 
-.header .container img {
-    width: 500px;
-    height: auto;
-    border-style: solid;
-    border-color: var(--PrimaryColor2);
-    border-radius: 5px;
-
-}
+/* Header Base Elements */
 
 
-.hero {
-    /*
-    border-style: solid;
-    border-color: #fff;
-    */
-
-    padding: 30px 30px 30px 30px;
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    justify-content: center;
-    width: 450px;
-}
-
-.hero h1 {
-    /*
-    border-style: solid;
-    border-color: #fff;
-    */
-    
-    font-weight: 900;
-    font-size: 48px;
-    margin-bottom: 10px;
-    line-height: 1.2;
-}
-
-.hero p {
-    /*
-    border-style: solid;
-    border-color: #fff;
-    */
-
-    font-size: 18px;
-}
 
 .hero a {
     text-decoration: none;  
@@ -224,8 +170,9 @@ img {
     align-self: flex-start;
 }
 
-}
 
+
+/* Header CSS Smaller screens */
 
 
 /* Header CSS   */
@@ -233,81 +180,60 @@ img {
 
 
 
-@media(min-width: 1400px) {
+@media(min-width: 0px) {
+
+
+    .header {
+        height: 100vmin;
+    }
 
 
     .header .container {
         /*
         border-style: solid;
-        border-color: #fff;
+        border-color: var(--PrimaryColor2);
         */
+        max-width: 80vmax;
+        height: 100%;
         display: flex;
-        max-width: 70vmax;
-        height: 65vmin;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
         align-items: center;
-        justify-content: space-between;
     }
-    
-    
+
     .header .container img {
-        width: 500px;
         height: auto;
+        width: 79vmax;
         border-style: solid;
         border-color: var(--PrimaryColor2);
         border-radius: 5px;
-    
     }
-    
-    
-    /* Hero */
-    
-    
-    .hero {
-        /*
-        border-style: solid;
-        border-color: #fff;
-        */
-    
-        padding: 30px 30px 30px 30px;
-        display: flex;
-        height: 100%;
-        flex-direction: column;
-        justify-content: center;
-        width: 450px;
-    }
-    
-    .hero h1 {
-        /*
-        border-style: solid;
-        border-color: #fff;
-        */
+
+    .header .container .hero {
+        /*border-style: solid;
+        border-color: #e5e7eb;*/
         
-        font-weight: 900;
-        font-size: 48px;
-        margin-bottom: 10px;
-        line-height: 1.2;
+        height: 25vmax;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
     }
-    
+
+    .hero h1 {
+        margin: 20px 0px 10px 0px;
+        /*border-style: solid;
+        border-color: #e5e7eb;*/
+        text-align: start;
+        align-items: center;
+        justify-content: center;
+    }
+
     .hero p {
-        /*
-        border-style: solid;
-        border-color: #fff;
-        */
-    
-        font-size: 18px;
+        margin: 0px 0px 15px 0px;
+        text-align: center;
     }
-    
-    .hero a {
-        text-decoration: none;  
-        color: var(--PrimaryColor2);
-        background: var(--PrimaryColor3);
-    }
-    
-    .hero a:hover {
-        color: var(--PrimaryColor3);
-        background-color: var(--PrimaryColor2);
-    }
-    
+
     
     .hero .button {
         /*
@@ -315,34 +241,115 @@ img {
         border-color: #fff;
         */
     
-        font-size: small;
+        font-size: large;
         font-weight: 600;
     
-        width: 100px;
-        height: 30px;
+        width: 150px;
+        height: 35px;
         border-radius: 5px;
         margin-top: 10px;
         
         display: flex;
         justify-content: center;
         align-items: center;
-        align-self: flex-start;
-    }
+        align-self: center;
     
-    }
-
-
-
-
-
-
-/*
-
-@media(max-width: 1200px) {
-    .header .container {
-        display: flex;
-        flex-wrap: wrap;
-    }
 }
 
-*/
+
+
+
+
+
+
+
+/* Header CSS 1125px + (full screen) */
+
+
+
+@media(min-width: 1125px) {
+
+
+.header .container {
+    /*
+    border-style: solid;
+    border-color: #fff;
+    */
+    display: flex;
+    flex-direction: row;
+    max-width: 70vmax;
+    height: 65vmin;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.header .container img {
+    width: 500px;
+    height: auto;
+   /*
+    border-style: solid;
+    border-color: var(--PrimaryColor2);
+    border-radius: 5px;
+    */
+}
+
+
+.hero {
+    /*
+    border-style: solid;
+    border-color: #fff;
+    */
+
+    padding: 30px 30px 30px 30px;
+    height: 100%;
+    width: 450px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    /*
+    border-style: solid;
+    border-color: #fff;
+    */
+    text-align: start;
+    font-weight: 900;
+    font-size: 48px;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.hero p {
+    /*
+    border-style: solid;
+    border-color: #fff;
+    */
+
+    font-size: 18px;
+    text-align: start;
+}
+
+.hero .button {
+    /*
+    border-style: solid;
+    border-color: #fff;
+    */
+
+    font-size: small;
+    font-weight: 600;
+
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 10px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start;
+
+}
+
+
+
