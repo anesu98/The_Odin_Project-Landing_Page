@@ -605,7 +605,7 @@ img {
 }
 
 .section .container .quoted {
-    /* 
+    /*
     border-style: solid;
     border-color: black;
     */
@@ -618,6 +618,10 @@ img {
 
     .section {
         height: 60vmax;
+    }
+
+    .section .container {
+        flex-wrap: wrap;
     }
 
     .section .container .quote {
@@ -641,5 +645,20 @@ img {
         font-weight: bolder;
         text-align: end;
         
+    }
+}
+
+@media(min-width: 1125px) {
+
+    .section {
+        height: 40vmax;
+    }
+
+    .section .container {
+        flex-wrap: nowrap;
+    }
+
+    .section .container .quote {
+        height: 15vmax;
     }
 }
