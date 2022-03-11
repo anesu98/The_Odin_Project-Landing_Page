@@ -765,3 +765,36 @@ img {
         padding: 10px 60px 10px 60px;
     }
 }
+
+
+@media(min-width: 1125px) {
+
+    .call2action {
+        height: 25vmax;
+    }
+
+    .bluebox {
+        flex-direction: row;
+        height: 170px;
+        width: 70vmax;
+
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .message h2{
+        width: 500px;
+        text-align: start;
+        margin: 0px 0px 0px 0px;
+    }
+
+    .message p {
+        width: 500px;
+        text-align: start;
+        /*
+        border-color: red;
+        border-style: solid;
+        */
+    }
+
+}
