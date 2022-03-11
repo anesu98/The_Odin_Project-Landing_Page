@@ -804,3 +804,21 @@ img {
 /* Footer */
 
 
+.footer {
+    height: 10vmax;
+}
+
+.footer .container {
+    height: 100%;
+    background-color: var(--PrimaryColor1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .container p {
+    color: var(--PrimaryColor2);
+    text-align: center;
+    font-weight: 500;
+    font-style: normal;
+}
