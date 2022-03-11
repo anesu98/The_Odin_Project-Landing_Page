@@ -662,3 +662,106 @@ img {
         height: 15vmax;
     }
 }
+
+
+/*  Call2Action  */
+
+.call2action {
+    height: 40vmax;
+}
+
+.call2action .container {
+    height: 100%;
+    /*
+    border-color: black;
+    border-style: solid;
+    */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call2action .container .bluebox {
+    display: flex;
+    /*
+    border-color: black;
+    border-style: solid;
+    */
+    background-color: var(--PrimaryColor3);
+    border-radius: 10px;
+}
+
+.bluebox a {
+    border-color: var(--PrimaryColor2);
+    border-style: solid;
+
+    text-decoration: none;
+    background-color: var(--PrimaryColor3);
+    color: var(--PrimaryColor2);
+    border-radius: 10px;
+
+}
+
+.bluebox a:hover {
+    text-decoration: none;
+    background-color: var(--PrimaryColor2);
+    color: var(--PrimaryColor3);
+
+}
+
+.bluebox .message {
+    /*
+    border-color: black;
+    border-style: solid;
+    */
+    color: var(--PrimaryColor2);
+    display: flex;
+
+}
+
+@media(min-width: 0px) {
+
+    .call2action {
+        height: 60vmax;
+    }
+
+
+    .bluebox {
+        flex-direction: column;
+        height: 370px;
+        width: 70vmin;
+
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    .bluebox .message {
+        
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 150px;
+        margin: 0px 0px 30px 0px;
+
+    }
+
+    .message h2 {
+        /*
+        border-color: red;
+        border-style: solid;
+        */
+        margin: 0px 0px 5px 0px;
+        width: 300px;
+        text-align: center;
+    }
+    .message p {
+        width: 350px;
+        text-align: center;
+    }
+
+    .bluebox a {
+        padding: 10px 60px 10px 60px;
+    }
+}
