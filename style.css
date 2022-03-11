@@ -583,10 +583,10 @@ img {
 
 .section .container {
     height: 100%;
-
+    /*
     border-color: black;
     border-style: solid;
-
+    */
 
     display: flex;
     justify-content: center;
@@ -595,20 +595,20 @@ img {
 }
 
 .section .container .quote {
-    
+    /*
     border-style: solid;
     border-color: black;
-
+    */
 
     height: 20vmax;
     width: 50vmax;
 }
 
 .section .container .quoted {
-        
+    /* 
     border-style: solid;
     border-color: black;
-
+    */
 
     height: 20vmax;
     width: 50vmax;
@@ -632,6 +632,14 @@ img {
     }
 
     .section .container .quoted {
+
         color: var(--PrimaryColor1);
+        width: 70vmax;
+        height: 5vmax;
+
+        font-size: 25px;
+        font-weight: bolder;
+        text-align: end;
+        
     }
 }
